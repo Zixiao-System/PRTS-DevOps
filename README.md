@@ -36,11 +36,19 @@ PRTS (Production Resource Tracking System) is an enterprise-grade DevOps managem
 ## Features
 
 ### Logos IDE
+
+> **Note**: Logos IDE is being migrated to a standalone repository for independent development and releases. See [ide/MIGRATION_PLAN.md](ide/MIGRATION_PLAN.md) for details.
+
 - Monaco Editor with intelligent code completion
 - Integrated terminal (xterm.js)
+- Single-click file opening (VS Code style)
+- Git integration and branch management
 - CI/CD pipeline management
 - Real-time monitoring dashboard
-- MDUI-based modern UI
+- MDUI-based modern Material Design UI
+- Dark/Light theme support
+
+For more information, see the [Logos IDE README](ide/README.md).
 
 ### Mobile Applications
 - **iOS**: SwiftUI, APNs push notifications, Live Activity, Dynamic Island
@@ -105,6 +113,8 @@ docker-compose up -d
 ```
 PRTS_DevOps_platform/
 ├── ide/                    # Logos IDE (Electron + Vue 3 + MDUI)
+│   ├── README.md          # IDE documentation
+│   └── MIGRATION_PLAN.md  # Standalone repo migration plan
 ├── phone-and-ipad/
 │   ├── ios/               # iOS App (SwiftUI)
 │   └── android/           # Android App (Flutter)
